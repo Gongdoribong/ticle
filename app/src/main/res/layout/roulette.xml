@@ -39,13 +39,13 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:src="@tools:sample/avatars" />
+                    android:src="@drawable/ticle_profile" />
 
                 <TextView
                     android:id="@+id/dIconTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
+                    android:text="두근두근~"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/Icon"
@@ -92,7 +92,9 @@
             android:layout_height="60dp"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
-            android:src="@color/black"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -127,7 +129,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
-            android:text="Button"
+            android:text="돌리기!"
             app:layout_constraintBottom_toTopOf="@+id/navBtn2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

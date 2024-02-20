@@ -34,13 +34,13 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:src="@tools:sample/avatars" />
+                android:src="@drawable/ticle_profile" />
 
             <TextView
                 android:id="@+id/dIconTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:text="티끌이는 부자가 될거야~~~"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/Icon"
@@ -107,7 +107,9 @@
                 android:id="@+id/buy1btn"
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:src="@color/black"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ticle_1won"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -117,18 +119,21 @@
                 android:id="@+id/t1txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:textSize="90px"
+                android:text="1원 티끌이"
                 app:layout_constraintStart_toEndOf="@+id/buy1btn"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/d1txt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="개백수 티끌이. 1포인트를 내고 룰렛을 돌려 2포인트를 획득할 수 있습니다."
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/buy1btn"
-                app:layout_constraintTop_toBottomOf="@+id/t1txt" />
+                app:layout_constraintTop_toBottomOf="@+id/t1txt"
+                app:layout_constraintVertical_bias="0.884" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -147,25 +152,30 @@
                 android:id="@+id/buy5btn"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@color/black"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/ticle_5won"/>
 
             <TextView
                 android:id="@+id/t5txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:textSize="75px"
+                android:text="5원 티끌이"
                 app:layout_constraintStart_toEndOf="@+id/buy5btn"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/d5txt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:textSize="45px"
+                android:text="직장인 티끌이. 5포인트를 내고 룰렛을 돌려 10포인트를 얻을 수 있습니다."
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/buy5btn"
                 app:layout_constraintTop_toBottomOf="@+id/t5txt" />
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -186,27 +196,33 @@
                 android:id="@+id/buy10btn"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:src="@color/black"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="0dp" />
+                tools:layout_editor_absoluteX="0dp"
+                android:src="@drawable/ticle_10won"/>
 
             <TextView
                 android:id="@+id/t10txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:textSize="60px"
+                android:text="10원 티끌이"
                 app:layout_constraintStart_toEndOf="@+id/buy10btn"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/d10txt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:textSize="40px"
+                android:text="부자 티끌이. 10포인트를 내고 룰렛을 돌려 20포인트를 얻을 수 있습니다."
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/buy10btn"
-                app:layout_constraintTop_toBottomOf="@+id/t10txt" />
+                app:layout_constraintTop_toBottomOf="@+id/t10txt"
+                app:layout_constraintVertical_bias="0.333" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -233,26 +249,30 @@
                     android:id="@+id/buy500btn"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@color/black"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/ticle_500won"/>
 
                 <TextView
                     android:id="@+id/t500txt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView"
+                    android:text="500원 티끌이"
                     app:layout_constraintStart_toEndOf="@+id/buy500btn"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/d500txt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:text="알지? 도박문제 전문상담 국번없이 1336"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/buy500btn"
-                    app:layout_constraintTop_toBottomOf="@+id/t500txt" />
+                    app:layout_constraintTop_toBottomOf="@+id/t500txt"
+                    app:layout_constraintVertical_bias="0.769" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -291,11 +311,13 @@
                 android:id="@+id/navBtn"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:src="@color/black"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/gogacha"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

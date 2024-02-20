@@ -32,13 +32,13 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:src="@tools:sample/avatars" />
+                android:src="@drawable/mnt" />
 
             <TextView
                 android:id="@+id/dIconTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView"
+                android:text="티끌을 모아서 태산이 되었다!"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/Icon"
@@ -331,37 +331,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <Button
+            <ImageButton
                 android:id="@+id/gachaBtn"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:background="#3a5994"
+                android:layout_height="60dp"
+                android:background="@android:color/transparent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageView
-                android:id="@+id/gachaImg"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="4dp"
-                android:contentDescription="TODO"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:src="@drawable/gachaball" />
+                android:src="@drawable/gachago"/>
 
-            <TextView
-                android:id="@+id/dGachaTxt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="가챠 GO!"
-                android:textSize="70px"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/gachaImg"
-                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -392,13 +372,15 @@
                 android:id="@+id/navBtn"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
-                android:src="@color/black"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.488"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="0.0"
+                android:src="@drawable/goroulette"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
